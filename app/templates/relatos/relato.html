@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main>
+    <ul class="insights">
+        <li>
+            <span class="info">
+                <a href="{% url "n_relato" %}"><h3>Relatos</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "estra" %}"><h3>Estratificações</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "l_relatos" %}"><h3>Lista de relatos</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "l_estra" %}"><h3>Lista de Estratificações</h3></a>
+            </span>
+        </li>
+    </ul>
+</main>
+{% endblock %}

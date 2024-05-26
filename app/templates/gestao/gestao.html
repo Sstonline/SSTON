@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main>
+    <ul class="insights">
+        <li>
+            <span class="info">
+                <a href="{% url "user" %}"><h3>Usuario</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "unidade" %}"><h3>Unidade</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "turno" %}"><h3>Turno</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "setor" %}"><h3>Setor</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "cargo" %}"><h3>Cargo</h3></a>
+            </span>
+        </li>
+    </ul>
+</main>
+{% endblock %}

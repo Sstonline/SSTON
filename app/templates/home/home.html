@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block main %}
+<main>
+    <ul class="insights">
+        <li>
+            <span class="info">
+                <a href="{% url "relato" %}"><h3>Relatos</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "dash" %}"><h3>Dashboards</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "gestao" %}"><h3>Gestão</h3></a>
+            </span>
+        </li>
+        <li>
+            <span class="info">
+                <a href="{% url "config" %}"><h3>Configuração</h3></a>
+            </span>
+        </li>
+    </ul>
+</main>
+{% endblock %}

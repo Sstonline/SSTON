@@ -19,11 +19,11 @@
             <div class="logo-name"><span>SST</span>-ON</div>
         </a>
         <ul class="side-menu">
-            <li><a href="#"><i class='bx bxs-dashboard'></i>Inicio</a></li>
-            <li><a href="#"><i class='bx bx-store-alt'></i>Relatos</a></li>
-            <li class="active"><a href="#"><i class='bx bx-analyse'></i>Dashboards</a></li>
-            <li><a href="#"><i class='bx bx-group'></i>Gestão</a></li>
-            <li><a href="#"><i class='bx bx-cog'></i>Configuração</a></li>
+            <li><a href="{% url "home" %}"><i class='bx bxs-dashboard'></i>Inicio</a></li>
+            <li><a href="{% url "relato" %}"><i class='bx bx-store-alt'></i>Relatos</a></li>
+            <li class="active"><a href="{% url "dash" %}"><i class='bx bx-analyse'></i>Dashboards</a></li>
+            <li><a href="{% url "gestao" %}"><i class='bx bx-group'></i>Gestão</a></li>
+            <li><a href="{% url "config" %}"><i class='bx bx-cog'></i>Configuração</a></li>
         </ul>
         <ul class="side-menu">
             <li>
@@ -54,12 +54,12 @@
                 <span class="count">12</span>
             </a>
             <a href="#" class="profile">
-                <img src="images/logo.png">
+                <img src="">
             </a>
         </nav>
 
         <!-- End of Navbar -->
-
+        {% block main %}
         <main>
             <div class="header">
                 <div class="left">
@@ -199,7 +199,7 @@
             </div>
 
         </main>
-
+        {% endblock %}
     </div>
 
     <script src="{% static "js/base.js" %}"></script>
